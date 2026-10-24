@@ -1,0 +1,39 @@
+{
+  "name": "@ecommerce-app/server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Express + MongoDB API for the storefront",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "seed": "node src/seed/seed.js",
+    "lint": "eslint .",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "mongodb-memory-server": "^10.1.4",
+    "supertest": "^7.1.0",
+    "vitest": "^3.0.9"
+  }
+}
