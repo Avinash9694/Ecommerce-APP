@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northline — Everyday essentials, made well</title>
+    <meta
+      name="description"
+      content="Northline is a full-stack e-commerce storefront: browse a curated catalog, manage a cart, check out with a mock payment and track orders. Includes an in-browser demo mode."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Northline — Everyday essentials, made well" />
+    <meta
+      property="og:description"
+      content="Full-stack e-commerce storefront with cart, checkout, orders and an admin console."
+    />
+    <meta property="og:url" content="https://avinash9694.github.io/Ecommerce-APP/" />
+    <meta name="theme-color" content="#fafaf9" />
+    <link rel="icon" type="image/svg+xml" href="/Ecommerce-APP/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      try {
+        var t = localStorage.getItem('shop.theme');
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
