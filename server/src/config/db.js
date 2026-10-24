@@ -1,13 +1,11 @@
 import mongoose from 'mongoose';
 
-const connectDB = async () => {
-    try {
-        const conn = await mongoose.connect(process.env.MONGO_URL);
-        console.log(`connected to mongodb database ${conn.connection.host}`);
-
-    }catch(error){
-        console.log(`Error in MongoDB ${error}`)
-    }
+export async function connectDB(uri) {
+  mongoose.set('strictQuery', true);
+  const conn = await mongoose.connect(uri);
+  return conn.connection;
 }
 
-export default connectDB
+export async function disconnectDB() {
+  await mongoose.disconnect();
+}

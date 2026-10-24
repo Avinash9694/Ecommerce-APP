@@ -1,36 +1,27 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import morgan from 'morgan';
-import connectDB from './config/db.js';
-import authRoute from './routes/authRoute.js';
+import { config } from './config/env.js';
+import { connectDB, disconnectDB } from './config/db.js';
+import { createApp } from './app.js';
 
-//configure .env
-dotenv.config()
+async function main() {
+  const db = await connectDB(config.mongoUri);
+  console.info(`MongoDB connected: ${db.host}/${db.name}`);
 
-//database config
-connectDB();
+  const server = createApp().listen(config.port, () => {
+    console.info(`API listening on http://localhost:${config.port} (${config.nodeEnv})`);
+  });
 
-//rest object
-const app = express();
+  const shutdown = (signal) => {
+    console.info(`${signal} received, shutting down`);
+    server.close(async () => {
+      await disconnectDB();
+      process.exit(0);
+    });
+  };
+  process.on('SIGINT', shutdown);
+  process.on('SIGTERM', shutdown);
+}
 
-//middlewares
-app.use(express.json());
-app.use(morgan('dev'));
-
-//routes
-app.use('/api/v1/auth',authRoute);
-
-//rest api
-app.get('/', (req,res) => {
-    res.send(
-        "Ecommerce app"
-    );
-});
-
-//PORT
-const PORT = process.env.PORT || 8080;
-
-
-app.listen(PORT,() =>{
-    console.log(`Server is running on ${PORT}`);
+main().catch((err) => {
+  console.error('Failed to start server', err);
+  process.exit(1);
 });

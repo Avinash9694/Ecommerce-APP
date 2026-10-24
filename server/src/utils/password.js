@@ -1,15 +1,6 @@
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
-export const hashPassword = async (password) => {
-    try {
-        const saltRounds = 10;
-        const hashedPassword = await bcrypt.hash(password,saltRounds);
-        return hashedPassword
-    } catch  (error) {
-        console.log(error);
-    }
-};
+const SALT_ROUNDS = 10;
 
-export const comparePassword = async (password,hashedPassword) => {
-    return bcrypt.compare(password,hashedPassword)
-}
+export const hashPassword = (password) => bcrypt.hash(password, SALT_ROUNDS);
+export const comparePassword = (password, hash) => bcrypt.compare(password, hash);

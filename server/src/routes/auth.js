@@ -1,18 +1,24 @@
-import express from 'express';
-import {registerController,loginController, testController} from '../controllers/authController.js';
-import { isAdmin, requireSignIn } from '../middlewares/authMiddleware.js';
+import { Router } from 'express';
+import * as ctrl from '../controllers/auth.js';
+import { validate } from '../middleware/validate.js';
+import { requireAuth } from '../middleware/auth.js';
+import { authLimiter } from '../middleware/rate-limit.js';
+import { asyncHandler } from '../utils/async-handler.js';
+import { loginSchema, registerSchema, updateProfileSchema } from '../schemas/auth.js';
 
-//router object
-const router = express.Router();
+export const authRouter = Router();
 
-//routing
-//REGISTER || Method POST
-router.post('/register',registerController);
-
-//LOGIN || POST
-router.post('/login',loginController);
-
-//test routes
-router.get('/test', requireSignIn, isAdmin, testController);
-
-export default router;
+authRouter.post(
+  '/register',
+  authLimiter,
+  validate({ body: registerSchema }),
+  asyncHandler(ctrl.register),
+);
+authRouter.post('/login', authLimiter, validate({ body: loginSchema }), asyncHandler(ctrl.login));
+authRouter.get('/me', requireAuth, asyncHandler(ctrl.me));
+authRouter.patch(
+  '/me',
+  requireAuth,
+  validate({ body: updateProfileSchema }),
+  asyncHandler(ctrl.updateProfile),
+);
