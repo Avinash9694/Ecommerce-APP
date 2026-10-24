@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img">
+  <defs><linearGradient id="g" gradientTransform="rotate(45)"><stop offset="0" stop-color="#f0fdf4"/><stop offset="1" stop-color="#dcfce7"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="140" cy="660" r="90" fill="#22c55e" opacity="0.18"/><circle cx="680" cy="150" r="60" fill="#14532d" opacity="0.08"/>
+  <g transform="translate(400 400) scale(0.82) rotate(-6) translate(-400 -400)"><path d="M180 300 Q400 220 620 300" fill="none" stroke="#14532d" stroke-width="22" stroke-linecap="round" opacity="0.5"/><path d="M180 350 Q400 280 620 350" fill="none" stroke="#14532d" stroke-width="22" stroke-linecap="round" opacity="0.62"/><path d="M180 400 Q400 340 620 400" fill="none" stroke="#22c55e" stroke-width="22" stroke-linecap="round" opacity="0.74"/><path d="M180 450 Q400 400 620 450" fill="none" stroke="#14532d" stroke-width="22" stroke-linecap="round" opacity="0.86"/><path d="M180 500 Q400 460 620 500" fill="none" stroke="#14532d" stroke-width="22" stroke-linecap="round" opacity="0.98"/></g>
+</svg>
