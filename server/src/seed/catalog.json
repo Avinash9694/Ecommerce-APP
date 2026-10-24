@@ -1,0 +1,311 @@
+{
+  "categories": [
+    {
+      "name": "Audio",
+      "slug": "audio",
+      "description": "Headphones, earbuds and speakers tuned for everyday listening.",
+      "image": "categories/audio.svg"
+    },
+    {
+      "name": "Wearables",
+      "slug": "wearables",
+      "description": "Watches, bands and rings that keep up with you.",
+      "image": "categories/wearables.svg"
+    },
+    {
+      "name": "Home & Kitchen",
+      "slug": "home-kitchen",
+      "description": "Well-made essentials for the kitchen and the desk.",
+      "image": "categories/home-kitchen.svg"
+    },
+    {
+      "name": "Bags & Travel",
+      "slug": "bags-travel",
+      "description": "Carry gear built for commutes and long weekends.",
+      "image": "categories/bags-travel.svg"
+    },
+    {
+      "name": "Stationery",
+      "slug": "stationery",
+      "description": "Notebooks, pens and planners for people who still write things down.",
+      "image": "categories/stationery.svg"
+    },
+    {
+      "name": "Fitness",
+      "slug": "fitness",
+      "description": "Simple, durable kit for training at home.",
+      "image": "categories/fitness.svg"
+    }
+  ],
+  "products": [
+    {
+      "name": "Aurora Wireless Headphones",
+      "slug": "aurora-wireless-headphones",
+      "category": "audio",
+      "price": 799900,
+      "stock": 24,
+      "featured": true,
+      "rating": { "average": 4.7, "count": 318 },
+      "tags": ["wireless", "noise-cancelling", "bluetooth"],
+      "description": "Over-ear headphones with adaptive noise cancelling and 40 hours of playback. Memory-foam cushions and a folding frame make them easy to live with on long flights."
+    },
+    {
+      "name": "Pulse True Wireless Earbuds",
+      "slug": "pulse-true-wireless-earbuds",
+      "category": "audio",
+      "price": 349900,
+      "stock": 60,
+      "featured": false,
+      "rating": { "average": 4.4, "count": 942 },
+      "tags": ["wireless", "bluetooth", "compact"],
+      "description": "Pocket-sized earbuds with a six-hour charge and a case that adds three more. IPX5 rated, with touch controls you can actually find."
+    },
+    {
+      "name": "Echo Portable Speaker",
+      "slug": "echo-portable-speaker",
+      "category": "audio",
+      "price": 429900,
+      "stock": 35,
+      "featured": false,
+      "rating": { "average": 4.5, "count": 211 },
+      "tags": ["bluetooth", "outdoor", "waterproof"],
+      "description": "A fabric-wrapped speaker with a surprisingly deep low end for its size. Pair two for stereo, and take it to the beach without worrying about the splash."
+    },
+    {
+      "name": "Studio Desk Microphone",
+      "slug": "studio-desk-microphone",
+      "category": "audio",
+      "price": 599900,
+      "stock": 18,
+      "featured": false,
+      "rating": { "average": 4.6, "count": 127 },
+      "tags": ["usb", "podcast", "cardioid"],
+      "description": "USB-C condenser microphone with a cardioid pattern and a hardware mute button. Zero-latency monitoring through the built-in headphone jack."
+    },
+
+    {
+      "name": "Stride Fitness Band",
+      "slug": "stride-fitness-band",
+      "category": "wearables",
+      "price": 249900,
+      "stock": 80,
+      "featured": false,
+      "rating": { "average": 4.2, "count": 1560 },
+      "tags": ["fitness", "heart-rate", "sleep"],
+      "description": "Slim band with continuous heart-rate, SpO2 and sleep staging. Two weeks of battery and an always-on display that stays readable in sunlight."
+    },
+    {
+      "name": "Horizon Smartwatch",
+      "slug": "horizon-smartwatch",
+      "category": "wearables",
+      "price": 1299900,
+      "stock": 22,
+      "featured": true,
+      "rating": { "average": 4.6, "count": 684 },
+      "tags": ["smartwatch", "gps", "amoled"],
+      "description": "A 1.4-inch AMOLED watch with built-in GPS, call handling and over 100 workout modes. The sapphire glass and steel case shrug off daily knocks."
+    },
+    {
+      "name": "Nimbus Sleep Ring",
+      "slug": "nimbus-sleep-ring",
+      "category": "wearables",
+      "price": 849900,
+      "stock": 15,
+      "featured": false,
+      "rating": { "average": 4.3, "count": 203 },
+      "tags": ["sleep", "titanium", "recovery"],
+      "description": "A titanium ring that tracks sleep, temperature and recovery without a screen to glance at. Seven days of battery, charges in under an hour."
+    },
+    {
+      "name": "Trail GPS Watch",
+      "slug": "trail-gps-watch",
+      "category": "wearables",
+      "price": 1899900,
+      "stock": 9,
+      "featured": false,
+      "rating": { "average": 4.8, "count": 96 },
+      "tags": ["gps", "outdoor", "rugged"],
+      "description": "Multi-band GPS with offline topographic maps and a 30-day battery in watch mode. Built for trail runs and multi-day hikes."
+    },
+
+    {
+      "name": "Ember Pour-Over Kettle",
+      "slug": "ember-pour-over-kettle",
+      "category": "home-kitchen",
+      "price": 329900,
+      "stock": 30,
+      "featured": true,
+      "rating": { "average": 4.7, "count": 452 },
+      "tags": ["coffee", "kettle", "gooseneck"],
+      "description": "Gooseneck kettle with variable temperature control and a 60-minute hold. The counterbalanced handle gives a slow, even pour."
+    },
+    {
+      "name": "Terra Ceramic Mug Set",
+      "slug": "terra-ceramic-mug-set",
+      "category": "home-kitchen",
+      "price": 149900,
+      "stock": 48,
+      "featured": false,
+      "rating": { "average": 4.5, "count": 389 },
+      "tags": ["ceramic", "set-of-4", "dishwasher-safe"],
+      "description": "Four stoneware mugs with a speckled reactive glaze, so no two are quite alike. 350 ml, dishwasher and microwave safe."
+    },
+    {
+      "name": "Nordic Cast Iron Pan",
+      "slug": "nordic-cast-iron-pan",
+      "category": "home-kitchen",
+      "price": 479900,
+      "stock": 20,
+      "featured": false,
+      "rating": { "average": 4.8, "count": 275 },
+      "tags": ["cast-iron", "cookware", "oven-safe"],
+      "description": "A 26 cm pre-seasoned skillet with a smooth cooking surface and a helper handle. Goes from hob to oven to table."
+    },
+    {
+      "name": "Lumen Desk Lamp",
+      "slug": "lumen-desk-lamp",
+      "category": "home-kitchen",
+      "price": 289900,
+      "stock": 40,
+      "featured": false,
+      "rating": { "average": 4.4, "count": 518 },
+      "tags": ["lamp", "led", "usb-c"],
+      "description": "An articulating LED lamp with five colour temperatures and stepless dimming. The base doubles as a wireless phone charger."
+    },
+
+    {
+      "name": "Commuter Laptop Backpack",
+      "slug": "commuter-laptop-backpack",
+      "category": "bags-travel",
+      "price": 449900,
+      "stock": 33,
+      "featured": true,
+      "rating": { "average": 4.6, "count": 731 },
+      "tags": ["backpack", "laptop", "water-resistant"],
+      "description": "A 20-litre backpack with a padded 16-inch laptop sleeve and a luggage pass-through. Recycled water-resistant shell, lifetime stitching warranty."
+    },
+    {
+      "name": "Weekender Duffel",
+      "slug": "weekender-duffel",
+      "category": "bags-travel",
+      "price": 529900,
+      "stock": 17,
+      "featured": false,
+      "rating": { "average": 4.5, "count": 164 },
+      "tags": ["duffel", "travel", "canvas"],
+      "description": "Waxed canvas and full-grain leather trim in a 40-litre carry-on friendly size. A separate shoe compartment keeps the rest of your clothes clean."
+    },
+    {
+      "name": "Slim Card Wallet",
+      "slug": "slim-card-wallet",
+      "category": "bags-travel",
+      "price": 129900,
+      "stock": 90,
+      "featured": false,
+      "rating": { "average": 4.3, "count": 1203 },
+      "tags": ["wallet", "leather", "rfid"],
+      "description": "Holds six cards and a few folded notes with RFID shielding built in. Vegetable-tanned leather that darkens with use."
+    },
+    {
+      "name": "Carry-On Hard Shell Suitcase",
+      "slug": "carry-on-hard-shell-suitcase",
+      "category": "bags-travel",
+      "price": 999900,
+      "stock": 12,
+      "featured": false,
+      "rating": { "average": 4.7, "count": 342 },
+      "tags": ["suitcase", "polycarbonate", "spinner"],
+      "description": "A polycarbonate carry-on with silent 360-degree wheels and a TSA-approved lock. Sized to fit every major airline's cabin limit."
+    },
+
+    {
+      "name": "Linen Hardcover Notebook",
+      "slug": "linen-hardcover-notebook",
+      "category": "stationery",
+      "price": 69900,
+      "stock": 120,
+      "featured": false,
+      "rating": { "average": 4.6, "count": 876 },
+      "tags": ["notebook", "dotted", "a5"],
+      "description": "A5 dotted notebook with 192 pages of 100 gsm paper that takes fountain pen ink without bleeding. Lay-flat binding and a ribbon marker."
+    },
+    {
+      "name": "Brass Fountain Pen",
+      "slug": "brass-fountain-pen",
+      "category": "stationery",
+      "price": 219900,
+      "stock": 26,
+      "featured": true,
+      "rating": { "average": 4.7, "count": 229 },
+      "tags": ["pen", "brass", "fountain"],
+      "description": "A solid brass fountain pen with a medium steel nib and a satisfying heft. Takes standard international cartridges or the included converter."
+    },
+    {
+      "name": "Desk Organiser Set",
+      "slug": "desk-organiser-set",
+      "category": "stationery",
+      "price": 189900,
+      "stock": 38,
+      "featured": false,
+      "rating": { "average": 4.4, "count": 147 },
+      "tags": ["desk", "organiser", "oak"],
+      "description": "Three oak trays and a pen cup that nest together or spread across a desk. Oiled finish, felt feet."
+    },
+    {
+      "name": "Weekly Planner 2026",
+      "slug": "weekly-planner-2026",
+      "category": "stationery",
+      "price": 89900,
+      "stock": 75,
+      "featured": false,
+      "rating": { "average": 4.5, "count": 312 },
+      "tags": ["planner", "2026", "weekly"],
+      "description": "A week-to-view planner with a habit tracker on every spread and monthly reflection pages. Undated goals section at the back."
+    },
+
+    {
+      "name": "Cork Yoga Mat",
+      "slug": "cork-yoga-mat",
+      "category": "fitness",
+      "price": 269900,
+      "stock": 28,
+      "featured": false,
+      "rating": { "average": 4.6, "count": 398 },
+      "tags": ["yoga", "cork", "non-slip"],
+      "description": "Natural cork over a rubber base: grippier the sweatier you get, and naturally antimicrobial. 4 mm thick, 183 x 61 cm."
+    },
+    {
+      "name": "Adjustable Dumbbell Pair",
+      "slug": "adjustable-dumbbell-pair",
+      "category": "fitness",
+      "price": 899900,
+      "stock": 11,
+      "featured": false,
+      "rating": { "average": 4.7, "count": 186 },
+      "tags": ["strength", "dumbbell", "adjustable"],
+      "description": "Two dumbbells that dial from 2.5 to 24 kg each in 2.5 kg steps, replacing a full rack. Compact cradles keep them tidy."
+    },
+    {
+      "name": "Resistance Band Set",
+      "slug": "resistance-band-set",
+      "category": "fitness",
+      "price": 99900,
+      "stock": 100,
+      "featured": false,
+      "rating": { "average": 4.3, "count": 2104 },
+      "tags": ["bands", "mobility", "travel"],
+      "description": "Five latex bands from extra-light to extra-heavy with a door anchor and handles. Fits in the pocket of your gym bag."
+    },
+    {
+      "name": "Insulated Steel Bottle 1L",
+      "slug": "insulated-steel-bottle-1l",
+      "category": "fitness",
+      "price": 119900,
+      "stock": 65,
+      "featured": true,
+      "rating": { "average": 4.5, "count": 1398 },
+      "tags": ["bottle", "insulated", "steel"],
+      "description": "Double-wall stainless steel that keeps drinks cold for 24 hours or hot for 12. Powder-coated grip and a leak-proof flip lid."
+    }
+  ]
+}
